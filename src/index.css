@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  height: 100vh;
+}
+
+.first{
+  transform: translateY(100px);
+  animation-name: move;
+  animation-duration: 1s;
+}
+
+.second{
+  animation-name: moveTwo;
+  animation-duration: 3s;
+  transform: translateY(200px);
+}
+
+.third{
+  animation-name: moveThree;
+  animation-duration: 5s;
+  transform: translateY(200px);
+}
+
+@keyframes move {
+  from{transform: translateY(0px); opacity: 0;}
+  to{transform: translateY(100px); opacity: 1;}
+}
+
+@keyframes moveTwo {
+  from{transform: translateY(-100px); opacity: 0;}
+  to{transform: translateY(200px); opacity: 1;}
+}
+
+@keyframes moveThree {
+  from{transform: translateY(-400px); opacity: 0;}
+  to{transform: translateY(300px); opacity: 1;}
+}
